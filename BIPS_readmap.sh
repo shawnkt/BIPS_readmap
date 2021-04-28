@@ -14,7 +14,7 @@ module load bowtie2/bowtie2-2.3.1-python-2.7.14
 module load samtools/samtools-1.10
 
 #make index for genome
-bowtie2-build ../data/mouse_chr2.fa mm10
+bowtie2-build ../data/chr2.fa mm10
 
 #run bowtie2 mapping
 bowtie2 -x mm10 -1 ../data/wt_H3K4me3_read1.fastq -2 ../data/wt_H3K4me3_read2.fastq -S mm10.sam
